@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>BLOCKCHAIN BASED VOTING SYSTEM 1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+  
+  </head>
+  <body>
+    <div class="preloader-container">
+      <div class="preloader-text">
+        <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span
+        ><span>n</span><span>g</span><span>...</span>
+      </div>
+    </div>
+
+    <h2 class="heading">E-Voting Platform</h2>
+    <img src="./img/jayete.png" alt="" class="logo_showcase" />
+
+    <div class="main_box">
+      <div class="child1">
+        <form
+          name="registration_form"
+          id="registration_form"
+          method="post"
+          action="#"
+          enctype="multipart/form-data"
+        >
+          <div class="login-box box-1 element-with-border">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="dob">DOB</label>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                class="form-control"
+                placeholder="Enter your DOB"
+              />
+            </div>
+            <div class="form-group">
+              <label for="aadhar_no">Aadhar Number </label>
+              <input
+                type="text"
+                name="aadhar_no"
+                id="aadhar_no"
+                class="form-control"
+                placeholder="Enter your Aadhar Number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="account_address">Account Address</label>
+              <input
+                type="text"
+                name="account_address"
+                id="account_address"
+                class="form-control"
+                placeholder="Enter your Account Address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter your password"
+              />
+            </div>
+            <button
+              type="button"
+              id="register"
+              name="register"
+              class="btn btn-success button_style"
+            >
+              Register Now
+            </button>
+          </div>
+          <!-- end col -->
+        </form>
+      </div>
+      <div class="child2">
+        <h2 style="font-size: 50px; color: white">Registration Form</h2>
+        <!-- <h2 style="font-size: 40px;color: white;">Vote Ready:</h2> -->
+        <h2>
+          <span style="color: orange">Register Now</span
+          ><span style="color: rgb(255, 255, 255)">, Decide</span
+          ><span style="color: rgb(0, 255, 81)"> Tomorrow!</span>
+        </h2>
+
+        <p class="reg_para">
+          Empower Your Voice: Register today, shape tomorrow's direction. Your
+          vote is your impact – claim it now. Join the movement for change –
+          register and vote. Secure your say in the future – act today!
+          Together, let's build a brighter tomorrow, one vote at a time. Make
+          your mark count – register and be heard!
+        </p>
+        <div class="btn-group" style="display: flex; gap: 10px">
+          <button type="button" class="btn1" id="openPopup">
+            <strong>Login Now</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <a href="./adminlogin.html">
+            <button type="button" class="btn1" id="">
+              <strong>Admin Login</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-background" id="popupBackground">
+      <!-- Popup content -->
+      <div class="popup-content">
+        <!-- Close button -->
+        <span class="close-button" id="closePopup" style="color: white; font-size: 30px;font-weight: 700;">X</span>
+        <!-- Login form -->
+        <form
+          name="login_form"
+          id="login_form"
+          method="post"
+          action="#"
+          enctype="multipart/form-data"
+        >
+          <div class="login-box box-1 element-with-border" width="30%">
+            <h3 style="font-weight: 700; color: rgb(255, 255, 255)">Login Form</h3>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="login_email"
+                id="login_email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="login_password"
+                id="login_password"
+                class="form-control"
+                placeholder="Enter your password"
+              />
+            </div>
+            <button
+              type="button"
+              id="login"
+              name="login"
+              class="btn btn-success"
+              style="
+                font-weight: 700;
+                color: white;
+                background-color: green;
+                letter-spacing: 2px;
+              "
+            >
+              Login
+            </button>
+          </div>
+          <!-- end col -->
+        </form>
+      </div>
+    </div>
+
+    <!-- end container -->
+    <br />
+    <h4
+      style="
+        color: #333;
+        font-size: 26px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+      "
+    >
+      Made In India
+    </h4>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut,
+      } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        push,
+      } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDbEHL_DhUGUsLZI6QtzzIZsGzOBZGNKmo",
+        authDomain: "block-1e7c2.firebaseapp.com",
+        databaseURL: "https://block-1e7c2-default-rtdb.firebaseio.com",
+        projectId: "block-1e7c2",
+        storageBucket: "block-1e7c2.appspot.com",
+        messagingSenderId: "361558520366",
+        appId: "1:361558520366:web:ad921a4b6fed52d1b7a5bf",
+        measurementId: "G-QZCTVS5RJR",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const auth = getAuth();
+      const database = getDatabase();
+
+      //----- New Registration code start
+      // document.getElementById("register").addEventListener("click", function() {
+      //     var email =  document.getElementById("email").value;
+      //     var password = document.getElementById("password").value;
+      //     //For new registration
+      //     createUserWithEmailAndPassword(auth, email, password)
+      //     .then((userCredential) => {
+      //       // Signed in
+      //       const user = userCredential.user;
+      //       console.log(user);
+      //       alert("Registration successfully!!");
+      //       // Store user data in the database
+      //       const userRef = ref(database, 'users/' + user.uid);
+      //       set(userRef, {
+      //         email: email
+      //       }).then(() => {
+      //         console.log('User data saved successfully!');
+      //       }).catch((error) => {
+      //         console.error('Error saving user data: ', error);
+      //       });
+      //     })
+      //     .catch((error) => {
+      //       const errorCode = error.code;
+      //       const errorMessage = error.message;
+      //       // ..
+      //       console.log(errorMessage);
+      //       alert(error);
+      //     });
+      // });
+      //----- End
+
+      // Function to store user data
+      function storeUserData(email, dob, account_address, password, aadhar_no) {
+        const usersRef = ref(database, "users");
+        const newUserRef = push(usersRef);
+        set(newUserRef, {
+          email: email,
+          dob: dob,
+          account_address: account_address,
+          password: password,
+          aadhar_no: aadhar_no,
+        });
+      }
+
+      // Registration form submission
+      document
+        .getElementById("register")
+        .addEventListener("click", function () {
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+          // You can add additional fields like dob, accountAddress, and aadharNo here
+          var dob = document.getElementById("dob").value;
+          var accountAddress = document.getElementById("account_address").value;
+          var aadharNo = document.getElementById("aadhar_no").value;
+
+          // For new registration
+          createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in
+              const user = userCredential.user;
+              console.log(user);
+              alert("Registration successfully!!");
+              // Store user data in the database
+              storeUserData(email, dob, account_address, password, aadhar_no);
+              // storeUserData(email, dob, accountAddress, password, aadharNo);
+            })
+            .catch((error) => {
+              const errorMessage = error.message;
+              console.log(errorMessage);
+              alert(error);
+            });
+        });
+
+      //----- Login code start
+      document.getElementById("login").addEventListener("click", function () {
+        var email = document.getElementById("login_email").value;
+        var password = document.getElementById("login_password").value;
+
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in n
+            const user = userCredential.user;
+            console.log(user);
+            alert(user.email + " Login successfully!!!");
+            // Redirect to VoteChain-main/src/index.html
+            window.location.href = "./vote.html";
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorMessage);
+            alert(errorMessage);
+          });
+      });
+      //----- End
+
+      //----- Logout code start
+      document.getElementById("logout").addEventListener("click", function () {
+        signOut(auth)
+          .then(() => {
+            // Sign-out successful.
+            console.log("Sign-out successful.");
+            alert("Sign-out successful.");
+            document.getElementById("logout").style.display = "none";
+          })
+          .catch((error) => {
+            // An error happened.
+            console.log("An error happened.");
+          });
+      });
+      //----- End
+    </script>
+    <script>
+      // Function to open the popup
+      document
+        .getElementById("openPopup")
+        .addEventListener("click", function () {
+          document.getElementById("popupBackground").style.display = "block";
+        });
+
+      // Function to close the popup
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", function () {
+          document.getElementById("popupBackground").style.display = "none";
+        });
+    </script>
+
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          var loader = document.querySelector(".preloader-container");
+          loader.classList.add("active_new");
+          //  $('.preloader').addClass('active');
+          // Display your page content after preloader animation completes
+          // document.body.style.overflow = 'auto'; // Restore scrolling
+        }, 1000); // Adjust the duration as needed
+
+        // Apply animations to each span element with a delay
+        const spans = document.querySelectorAll(".preloader-text span");
+        spans.forEach((span, index) => {
+          setTimeout(() => {
+            span.style.opacity = "1";
+            span.style.animation =
+              " expandWidth 10s forwards, fadeOut 5s forwards"; // Add fade-out animation
+          }, index * 200); // Adjust the delay between each letter's animation
+        });
+      };
+    </script>
+  </body>
+</html>

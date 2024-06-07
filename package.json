@@ -1,0 +1,25 @@
+{
+  "name": "Dvote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "firebase": "^10.11.1",
+    "mysql": "^2.18.1",
+    "solc": "^0.8.25",
+    "web3": "^1.10.4"
+  }
+}
+

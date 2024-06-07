@@ -1,0 +1,513 @@
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: "jost";
+  letter-spacing: 2px;
+}
+
+.form-control {
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border: none;
+  padding: 0 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "jost";
+}
+input::placeholder {
+  color: white !important;
+}
+input[type="date"] {
+  color: white;
+}
+
+/* Change color of date placeholder */
+input[type="date"]::placeholder {
+  color: white;
+  opacity: 1; /* Ensure placeholder is fully visible */
+}
+::placeholder {
+  color: #ffffff !important;
+}
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body {
+  background: url("./img/india.jpeg.jpg") center center fixed;
+  background-size: cover;
+  padding-top: 10px; /* Adjust this value based on the height of your navbar */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.parent {
+  padding: 20px;
+}
+
+.login-box {
+  box-shadow: 0 0 10px 2px rgba(8, 44, 3, 0.479);
+  backdrop-filter: blur(5px);
+  background: rgb(12, 13, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 13, 13, 0.3926820728291317) 0%,
+    rgba(12, 13, 13, 1) 100%
+  );
+  /* overflow:hidden is important to hide windows */
+}
+.box-1 {
+  margin: 30px;
+  padding: 30px;
+}
+@keyframes borderAnimation {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: green;
+  }
+}
+/* Apply the animation to an element */
+.element-with-border {
+  animation: borderAnimation 3s infinite;
+  /* Adjust other styles for the element here */
+}
+.logo_showcase {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 10%;
+}
+.heading {
+  text-align: center;
+  background-image: linear-gradient(to right, #04f444, #ddb61a, #128807);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+.container_body {
+  width: 90%;
+}
+.parent {
+  width: 90%;
+}
+.main_box {
+  display: flex;
+}
+.child1 {
+  width: 50%;
+}
+.child2 h2 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+}
+.child2 {
+  width: 30%;
+  padding-top: 5%;
+}
+.reg_para {
+  text-align: justify;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+}
+
+/* button */
+
+@import url("s://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  overflow: hidden;
+  height: 6rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#161a25, #161a25),
+    linear-gradient(
+      137.48deg,
+      #f5434f 10%,
+      #631e29 45%,
+      #000000 67%,
+      #161a25 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: orbit 5s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  filter: blur(2rem);
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(245, 67, 79, 0.636);
+  animation: orbit 8s linear infinite;
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(99, 30, 41, 0.704);
+  animation: orbit 10s linear infinite;
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #161a25;
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+.btn1:active {
+  border: double 4px #631e29;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn1:active .circle {
+  background: #631e29;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.popup-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px); /* Add blur effect to the background */
+  z-index: 9999;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.07
+  ); /* Semi-transparent black background */
+  z-index: 9999;
+}
+
+/* Popup content */
+.popup-content {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.701);
+  backdrop-filter: blur(5px); /* Add blur effect to the background */
+  background: url("./img/india.jpeg.jpg") center center fixed;
+  background-size: cover;
+  z-index: 9999;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.button_style {
+  border: 4px solid white;
+  letter-spacing: 4px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.45) !important;
+}
+input:valid {
+  color: white !important; /* Change color to white */
+}
+
+/* Change color of placeholder when input has a value */
+input:valid::placeholder {
+  color: white !important; /* Change color to white */
+  opacity: 1; /* Ensure placeholder is fully visible */
+}
+
+/* Preloader animation */
+@keyframes preloaderAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader-container {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 1000;
+}
+.preloader-container.active_new {
+  -webkit-transform: translateY(-100vh);
+  transform: translateY(-100vh);
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.preloader-text {
+  color: white;
+  font-size: 90px;
+  /* opacity: 0; */
+  /* animation: fadeInLetter 1s forwards,  scaleIn 1s forwards; */
+  top: 50%;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  /* left: 50%; */
+  margin: auto;
+  text-align: center;
+}
+
+/* Animation for individual letters */
+.preloader-text span {
+  opacity: 0;
+  animation: topToBottom 10s forwards;
+  transform-origin: center; /* Set the transform origin to the center of each letter */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start with a slightly smaller scale */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End with the original scale */
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-100%); /* Start position above the viewport */
+  }
+  100% {
+    transform: translateY(
+      0
+    ); /* End position at the center of the viewport */
+  }
+}
+
+/* Add scale-in animation */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8); /* Start with a slightly smaller scale */
+  }
+  100% {
+    transform: scale(1); /* End with the original scale */
+  }
+}
+
+/* Add fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Add expandWidth animation */
+@keyframes expandWidth {
+  0% {
+    width: auto; /* Start with auto width */
+  }
+  100% {
+    width: 100%; /* End with full width */
+
+    letter-spacing: 20px;
+  }
+}

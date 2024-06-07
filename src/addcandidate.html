@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title>Best Actor Contest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="./user.css" rel="stylesheet" />
+  
+    <style>
+      body {
+          font-family: 'jost';
+          background-color: #333;
+          font-weight: 400;
+          color: #fff;
+          margin: 0;
+          padding: 0;
+      }
+
+      .sidebar {
+          background-color: #222;
+          color: white;
+      }
+.nav-item p{
+  color: white;
+}
+      .navbar {
+          background-color: #222;
+          color: white;
+      }
+
+      .card {
+        box-shadow: 0 0 10px 2px rgba(8, 44, 3, 0.479);
+  backdrop-filter: blur(5px);
+  background: rgb(12, 13, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 13, 13, 0.3926820728291317) 0%,
+    rgba(12, 13, 13, 1) 100%
+  );
+          color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          
+      }
+
+      .card-header {
+          background-color: #e3b746;
+          border-radius: 8px 8px 0 0;
+      }
+
+      .table {
+          background-color: #555;
+          color: #fff;
+      }
+
+      .table th,
+      .table td {
+          border-bottom: 1px solid #888;
+      }
+
+      .btn-success {
+          background-color: #4caf50;
+          border: none;
+          border-radius: 8px;
+          padding: 10px 20px;
+          cursor: pointer;
+          color: #fff;
+      }
+
+      .btn-success:hover {
+          background-color: #45a049;
+      }
+      .logo_showcase{
+          width: 20%;
+      }
+      .brand{
+          display: flex;
+          font-family: 'jost';
+          margin-top: 20px;
+      }
+      h4{
+          font-family: 'jost';
+          font-weight: 600;
+          font-size: 25px;
+          letter-spacing: 2px;
+      }
+  </style>
+  
+  </head>
+  <body>
+
+    
+    <!-- additional -->
+    <div class="wrapper ">
+      <div class="sidebar" data-color="green" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+        <!--
+          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+  
+          Tip 2: you can also add an image using data-image tag
+      -->          <div class="sidebar-wrapper">
+        <div class="brand">
+          <img src="./img/jayete.png" alt="" class="logo_showcase" />
+          <h4 style="margin-top: 5px;">Admin Panel</h4>
+      </div>
+            <ul class="nav" style="margin-top: 50px;">
+              <li class="nav-item">
+                <a class="nav-link" href="candidatedetails.html">
+                  <i class="material-icons">info</i>
+                  <p>Candidate Details</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">person_add</i>
+                  <p>Add Candidate</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="adminRegister.html">
+                  <i class="material-icons">how_to_reg</i>
+                  <p>Register</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="changePhase.html">
+                  <i class="material-icons">published_with_changes</i>
+                  <p>Change State</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./index.html">
+                  <i class="material-icons">logout</i>
+                  <p>LogOut</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <a class="navbar-brand" href="javascript:;">Add Candidate</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+            </button>
+          </div>
+        </nav>
+  
+        <div class="content">
+          <div class="container" style="width: 800px">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-success">
+                    <h4 class="card-title">Add Candidate Information</h4>
+                  </div>
+                  <br/>
+                  <div class="card-body">
+                    <!-- form  -->
+                    <form onsubmit="App.addCandidate(); return false;">
+                      <!-- 2 column grid layout with text inputs for the first and last names -->
+                      <div class="row mb-4">
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="name" class="form-control" required />
+                            <label class="form-label" for="form3Example1">Name</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="party" class="form-control" required />
+                            <label class="form-label" for="form3Example2">Party</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Checkbox -->
+                      <div class="row mb-4">
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="age" class="form-control" required />
+                            <label class="form-label" for="form3Example1">Age</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="qualification" class="form-control" required />
+                            <label class="form-label" for="form3Example2">Qualification</label>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <!-- Submit button -->
+                      <button type="submit"  class="btn btn-success btn-block mb-4 btn">Add</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="alert alert-success" id="loader">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="display: none;">
+                      <!-- <i class="material-icons">close</i> -->
+                    </button>
+                  <!-- <span>
+                  <b> Candidate </b> has been added Successfully....!</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Navbar -->
+    
+    
+    <!-- additional -->
+    
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+<script src="./assets/js/core/popper.min.js"></script>
+<script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!-- Plugin for the momentJs  -->
+<script src="./assets/js/plugins/moment.min.js"></script>
+<!-- Forms Validations Plugin -->
+<script src="./assets/js/plugins/jquery.validate.min.js"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+<script src="./assets/js/plugins/jquery-jvectormap.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="./assets/js/plugins/nouislider.min.js"></script>
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<!-- Library for adding dinamically elements -->
+<script src="./assets/js/plugins/arrive.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="./assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="./assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+
+
+
+
+  </body>
+</html>
